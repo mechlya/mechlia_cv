@@ -1,891 +1,615 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mechlia CV</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/main.css?ver=1.1.0" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
+  <meta name="description" content="Mohamed Amine Mechlia - Embedded Deep Learning Engineer specializing in satellite AI, drone perception, and edge systems.">
+  <title>Mohamed Amine Mechlia | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body id="top">
-  <header>
-    <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-        <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Mohamed Amine Mechlia CV</a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
-                class="navbar-toggler-bar bar3"></span></button>
-          </div>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+<body>
+  <header id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="brand">M.A. Mechlia</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <button id="menuButton" class="menu-toggle" aria-label="Open menu" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg>
+      </button>
     </div>
+    <aside id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <button id="closeMobile" class="mobile-menu-close" aria-label="Close menu" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"></path></svg>
+      </button>
+      <div class="mobile-links">
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </aside>
   </header>
-  <div class="page-content">
-    <div>
-      <div class="profile-page">
-        <div class="wrapper">
-          <div class="page-header page-header-small" filter-color="#336699">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('images/space.jpg')"></div>
-            <div class="container">
-              <div class="content-center">
-                <div class="cc-profile-image"><a href="#"><img src="images/IMG_mechlia.jpg" alt="Image" /></a></div>
-                <div class="h2 title">Mohamed Amine Mechlia</div>
-                <p class="category text-white">AI , Deep learning, Embedded Systems, Computer vision specialist </p><a
-                  class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary"
-                  href="./CV_Mohamed_Amine_Mechlia.pdf" download data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor">Download CV</a>
+
+  <main class="main-layout">
+    <section id="hero">
+      <canvas id="starfield-canvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="hero-eyebrow">AI · Embedded Systems · Computer Vision</span>
+        <h1 class="hero-title">Mohamed Amine Mechlia</h1>
+        <p class="hero-subtitle">Embedded Deep Learning Engineer</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="./Mohamed_Amine_Mechlia_eng.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+        <div class="hero-socials" aria-label="Social links">
+          <a class="social-link" href="https://github.com/mechlya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.556-1.11-4.556-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.545 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.843-2.339 4.687-4.567 4.935.359.31.679.92.679 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481A10.013 10.013 0 0 0 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/mechlia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2.5a4 4 0 0 1 4-2.5z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/mechlya/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><path d="M16 11.37a4 4 0 1 1-7.999.001A4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a class="social-link" href="https://www.facebook.com/amin.mechlia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">— 01</span>
+          <h2 class="section-heading">About</h2>
+        </div>
+        <div class="about-grid grid-two">
+          <div class="about-copy" data-reveal>
+            <p>Deep learning specialist building satellite and drone perception systems that operate reliably on edge hardware.</p>
+            <p>I design embedded AI pipelines for computer vision, 3D reconstruction, and real-time detection using Python, C++, TensorRT and hardware acceleration.</p>
+            <p>I work transparently in agile teams, share progress closely, and connect research to mission-ready deployments. Based in France, I also mentor kids through robotics education.</p>
+          </div>
+          <aside class="about-card" data-reveal>
+            <img class="about-photo" src="images/IMG_mechlia.jpg" alt="Mohamed Amine Mechlia portrait">
+            <div class="about-card-content">
+              <div class="info-row"><div class="info-label">Email</div><div>mechliamohamedamine@gmail.com</div></div>
+              <div class="info-row"><div class="info-label">Phone</div><div>+33 6 66 24 01 27</div></div>
+              <div class="info-row"><div class="info-label">Location</div><div>Nancy, France</div></div>
+              <div class="info-row"><div class="info-label">Languages</div><div>English, French, Arabic</div></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">— 02</span>
+          <h2 class="section-heading">Skills</h2>
+        </div>
+        <div class="skills-grid grid-two">
+          <div data-reveal>
+            <div class="skill-item" data-fill="90">
+              <div class="skill-label"><span>Python</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-fill="75">
+              <div class="skill-label"><span>Machine Learning</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-fill="75">
+              <div class="skill-label"><span>C</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-fill="80">
+              <div class="skill-label"><span>Computer Vision</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-fill="80">
+              <div class="skill-label"><span>C++</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-fill="80">
+              <div class="skill-label"><span>Embedded Systems</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+          <div data-reveal>
+            <div class="skill-group">
+              <div class="skill-group-label">Deep Learning</div>
+              <div class="tag-row">
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Keras</span>
               </div>
             </div>
-            <div class="section">
-              <div class="container">
-                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.facebook.com/amin.mechlia" rel="tooltip" title="Follow me on Facebook"><i
-                      class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.linkedin.com/in/mechlia/" rel="tooltip" title="Follow me on Linkedin"><i
-                      class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://github.com/mechlya" rel="tooltip" title="Follow me on github"><i
-                      class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.instagram.com/mechlya/" rel="tooltip" title="Follow me on Instagram"><i
-                      class="fa fa-instagram"></i></a></div>
+            <div class="skill-group">
+              <div class="skill-group-label">Computer Vision</div>
+              <div class="tag-row">
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">MMDetection</span>
+                <span class="skill-tag">Detectron2</span>
+                <span class="skill-tag">YOLO</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-label">Data Science</div>
+              <div class="tag-row">
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Matplotlib</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-label">MLOps</div>
+              <div class="tag-row">
+                <span class="skill-tag">ONNX</span>
+                <span class="skill-tag">TensorRT</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">TorchScript</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-label">Geospatial</div>
+              <div class="tag-row">
+                <span class="skill-tag">Rasterio</span>
+                <span class="skill-tag">GDAL</span>
+                <span class="skill-tag">SentinelHub</span>
+                <span class="skill-tag">Albumentations</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-label">Edge AI</div>
+              <div class="tag-row">
+                <span class="skill-tag">Jetson</span>
+                <span class="skill-tag">OpenVINO</span>
+                <span class="skill-tag">Vivado HLS</span>
+                <span class="skill-tag">FPGA</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section" id="about">
-        <div class="container">
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">About</div>
-                  <p> Deep Learning Specialist with extensive experience in applying advanced data science techniques,
-                    including deep learning and computer vision, to solve complex business problems. Proven expertise in
-                    developing real-time image processing algorithms, 3D reconstruction, and optimizing hardware for
-                    high-performance applications. Skilled in Python, C++, and a variety of AI frameworks, with a strong
-                    track record of delivering impactful insights and solutions in both research and industry
-                    environments.
+    </section>
 
-
-                  </p>
-                  <p>I'm working highly agile, transparent, and structured, sharing with you the whole process and
-                    progress in close cooperation, passionate about solving complex problems leveraging Artificial
-                    Intelligence. I am based in France and you can know more about me by checking my resume and previous
-                    works. <a href="https://www.linkedin.com/in/mechlia/" target="_blank">Learn More</a></p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="card-body">
-                  <div class="h4 mt-0 title">Basic Information</div>
-                  <div class="row">
-                    <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                    <div class="col-sm-8">29</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                    <div class="col-sm-8">mechliamohamedamine@gmail.com</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                    <div class="col-sm-8">+33 6 66 24 01 27</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-                    <div class="col-sm-8">54500, Nancy,France</div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-                    <div class="col-sm-8">English, French, Arabic</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">— 03</span>
+          <h2 class="section-heading">Projects</h2>
         </div>
-      </div>
-      <div class="section" id="skill">
-        <div class="container">
-          <div class="h4 text-center mb-4 title">Professional Skills</div>
-          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">python</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Machine Learning</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">75%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">c</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">75%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Computer Vision</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">80%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">c++</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                        data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">80%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">Embedded System<pan>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
-                            data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                            aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">80%</span>
-                        </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="portfolio-tabs" role="tablist" aria-label="Portfolio categories">
+          <button class="portfolio-tab active" data-tab-target="ai" aria-selected="true" type="button">AI & Systems</button>
+          <button class="portfolio-tab" data-tab-target="certs" aria-selected="false" type="button">Certifications</button>
+          <button class="portfolio-tab" data-tab-target="highlights" aria-selected="false" type="button">Highlights</button>
+          <span class="tab-indicator"></span>
         </div>
-      </div>
-
-
-      <div class="card">
-        <div class="row">
-          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body cc-experience-header"
-              style="display:flex; justify-content:center; align-items:center; height:120px;">
-              <div class="h5" style="color:white; font-weight:bold;">Other skills</div>
-            </div>
-
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-            <div class="card-body">
-              <div class="h5">Frameworks & Libraries</div>
-              <p style="font-size:18px;color:#336699">
-                <b>Deep Learning Frameworks:</b> PyTorch, TensorFlow, Keras <br>
-                <b>Computer Vision Libraries:</b> OpenCV, MMDetection, Detectron2, YOLO, CNNs, U-Net (Image
-                Segmentation) <br>
-                <b>Data Science & ML Tools:</b> Scikit-learn, Pandas, NumPy, Matplotlib <br>
-                <b>MLOps & Deployment:</b> ONNX, TensorRT, TorchScript, Docker <br>
-                <b>Geospatial / Satellite Imaging:</b> Rasterio, GDAL, SentinelHub-Py, Albumentations <br>
-                <b>Embedded & Edge AI:</b> NVIDIA Jetson SDK, TensorRT, OpenVINO
-              </p>
-
-              <div class="h5">Collaboration Tools & IDE</div>
-              <p style="font-size:18px;color:#336699">
-                Scrum, DevOps, Git, GitHub, Bitbucket, Docker, Jenkins, PyCharm, Anaconda, Visual Studio,
-                NetBeans, Eclipse, Vivado HLS, Proteus, StarUML
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 ml-auto mr-auto">
-              <div class="h4 text-center mb-4 title">Portfolio</div>
-              <div class="nav-align-center">
-                <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development"
-                      role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i
-                        class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                  <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i
-                        class="fa fa-camera" aria-hidden="true"></i></a></li>
-                </ul>
+        <div class="portfolio-panel active" data-tab-panel="ai">
+          <div class="project-grid">
+            <article class="project-card" data-reveal>
+              <div class="project-media" data-carousel="true" data-sources="media/car_96cm.mp4|media/96cm.mp4">
+                <video controls autoplay loop muted playsinline preload="metadata" poster="images/project1.png">
+                  <source src="media/car_96cm.mp4" type="video/mp4">
+                </video>
               </div>
-            </div>
-          </div>
-          <div class="tab-content gallery mt-5">
-
-
-
-
-
-            <div class="tab-pane active" id="web-development">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect">
-
-                          <!-- Bootstrap Carousel for 3 videos -->
-                          <div id="satelliteCarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-
-                              <div class="carousel-item active">
-                                <video autoplay muted loop controls>
-                                  <source src="media/car_96cm.mp4" type="video/mp4">
-                                </video>
-                              </div>
-
-                              <div class="carousel-item">
-                                <video autoplay muted loop controls>
-                                  <source src="media/96cm.mp4" type="video/mp4">
-                                </video>
-                              </div>
-
-
-
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="carousel-control-prev" href="#satelliteCarousel" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#satelliteCarousel" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
-
-                          <!-- Caption -->
-                          <figcaption>
-                            <div class="h4">Satellite Object Detection</div>
-                            <p>Detection of moving cars and airborne objects from satellite videos in multiple GSD
-                              resolutions.</p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect">
-
-                          <!-- Responsive YouTube embed -->
-                          <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"
-                              src="https://www.youtube.com/embed/FMPKpLsvjPY?start=13&rel=0&modestbranding=1&autoplay=1&mute=1&mute=1"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen>
-                            </iframe>
-                          </div>
-
-                          <figcaption>
-                            <div class="h4">Synthetic Aerial Imagery Dataset Generation</div>
-                            <p>
-                              Developed a pipeline using RenderDoc and Blender to generate synthetic aerial imagery of
-                              real-world locations with customizable flight paths, camera parameters, and annotated
-                              ground-truth data for training computer vision models.
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-
-
-
-<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-  <a href="#web-development">
-    <figure class="cc-effect">
-      <video autoplay muted loop controls>
-        <source src="media/GPS-denied-navigation.mp4" type="video/mp4">
-      </video>
-      <figcaption>
-        <div class="h4">GPS-Denied Drone Navigation</div>
-        <p>
-          Developed an onboard AI vision system enabling drones to navigate autonomously in GPS-denied environments.
-          Leveraged visual odometry, SLAM, and deep learning-based perception optimized for edge hardware.
-        </p>
-      </figcaption>
-    </figure>
-  </a>
-</div>
-
-
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project1.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Fruit Fly Detector</div>
-                            <p>Embedded System for Use in Real-Time Intelligent Traps for Detecting Fruit Fly</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect">
-
-                        <video width="300" height="200" autoplay muted controls loop>
-                          <source src="media/results.mp4" type="video/mp4">
-                        </video>
-                        <figcaption>
-                          <div class="h4">ADAS Project</div>
-                          <p>build an FPGA accelorator for pedestrain detection  (ADAs application)</p>
-                        </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <div class="col-md-6">
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect">
-                          <video autoplay muted loop controls>
-                            <source src="media/cloud_removal.mp4" type="video/mp4">
-                          </video>
-                          <figcaption>
-                            <div class="h4">Cloud Removal Module for Satellite Imaging</div>
-                            <p>
-                              Development of an on-board cloud removal system for satellites, designed to enhance image
-                              clarity
-                              and reduce unnecessary data transmission. By filtering cloud-covered regions directly in
-                              orbit,
-                              this module significantly lowers bandwidth usage and optimizes mission costs, enabling
-                              more efficient
-                              Earth observation and analysis.
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect">
-                          <video autoplay muted loop controls>
-                            <source src="media/anti_deone.mp4" type="video/mp4">
-                          </video>
-                          <figcaption>
-                            <div class="h4">Embedded AI for Airborne Detection & Tracking</div>
-                            <p>
-On-board computer-vision system that detects and tracks airborne objects (drones, small aircraft) in real time for anti-drone defence applications.
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project22.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Face Landmark Detection.</div>
-                            <p>Real Time 468 Face Landmark Detection using OpenCV, Python, using TensorFlow, and
-                              MediaPipe library that runs in real-time 30FPS on CPU</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#web-development">
-                        <figure class="cc-effect"><img src="images/project.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Face recognition Attendance Based project in Machine Learning.</div>
-                            <p>​
-                              #machinelearning #deeplearning #artificialintelligence #ai #datascience #bigdata #project
-                              #facedetection #facerecognition #python</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
+              <div class="project-body">
+                <h3 class="project-title">Satellite Object Detection</h3>
+                <p class="project-copy">Detection of moving cars and airborne objects in satellite video using an edge-aware vision pipeline.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Satellite</span>
+                  <span class="project-tag">Object Detection</span>
+                  <span class="project-tag">Edge AI</span>
+                </div>
+                <div class="project-action">
+                  <button data-carousel-next type="button">Next Clip</button>
                 </div>
               </div>
-            </div>
-
-
-
-
-
-
-
-            <div class="tab-pane" id="graphic-design" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/certification11.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">DeepLearning.AI TensorFlow Developer</div>
-                            <p>certification</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/certification33.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Convolutional Neural Networks</div>
-                            <p>certification</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/certification22.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Scrum Fundamentals Certified (SFC)</div>
-                            <p>certification</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#graphic-design">
-                        <figure class="cc-effect"><img src="images/certification44.png" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Machine Learning course</div>
-                            <p>certification</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                  </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata">
+                  <source src="media/cloud_removal.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Cloud Removal Module</h3>
+                <p class="project-copy">Onboard cloud filtering for satellite imagery to reduce bandwidth and improve analytics accuracy.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Satellite</span>
+                  <span class="project-tag">Imaging</span>
+                  <span class="project-tag">Payload</span>
                 </div>
               </div>
-            </div>
-
-
-            <div class="tab-pane" id="Photography" role="tabpanel">
-              <div class="ml-auto mr-auto">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/1.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">self with the godfathers of AI</div>
-                            <p>It was great meeting Yann LeCun at ICCV! He's such a great and humble man.</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/2.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Awarded first prize from Green'it Tunisia, a startup incubator supported by the UNDP</div>
-                            <p>prize 🏆</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/iccv.webp" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Demo presentation at the International Conference on Computer Vision </div>
-                            <p>Demo Nurenda</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/nueobotics.jpeg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Created an educational robotics startup developing a small programmable robot for kids, combining fun and learning through hands-on coding and play. </div>
-                            <p>Cofounder – Neobotics</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-
-                  </div>
-
-
-
-
-                  <div class="col-md-6">
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/3.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Certificate of participation in an entrepreneurship workshop hosted by the Jeunes Tunisiens Association</div>
-                            <p>Entrepreneurship</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/esa.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">Visite to ESA  ESA facility in Noordwijk, The Netherlands. : The facility in Noordwijk is ESA's largest site, known as the European Space Research and Technology Centre (ESTEC), which is the technical heart of the agency. </div>
-                            <p>ESA 🧑‍🚀 🚀 🛰️ </p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/snt.jpg" alt="Image" />
-                          <figcaption>
-                            <div class="h4">DVisit to the Reliability and Trust Research Hub (SnT) at the University of Luxembourg </div>
-                            <p>Trust Research Hub (SnT)</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                      <a href="#Photography">
-                        <figure class="cc-effect"><img src="images/iccv2.jpeg" alt="Image" />
-                          <figcaption>
-                            <div class="h4"> the International Conference on Computer Vision  Paris 2023 </div>
-                            <p>ICCV</p>
-                          </figcaption>
-                        </figure>
-                      </a></div>
-
-
-                  </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata">
+                  <source src="media/GPS-denied-navigation.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">GPS-Denied Drone Navigation</h3>
+                <p class="project-copy">Onboard vision and SLAM for autonomous drones operating without GPS in challenging environments.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Drone</span>
+                  <span class="project-tag">SLAM</span>
+                  <span class="project-tag">Perception</span>
                 </div>
               </div>
-            </div>
-
-
-
-
-          </div>
-
-
-        </div>
-      </div>
-      <div class="section" id="experience">
-        <div class="container cc-experience">
-          <div class="h4 text-center mb-4 title">Work Experience</div>
-
-
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>2024 – Sept 2025</p>
-                  <div class="h5">TELNET Space Mars</div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata">
+                  <source src="media/anti_deone.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Embedded AI for Airborne Detection</h3>
+                <p class="project-copy">Real-time airborne object detection and tracking for anti-drone applications on edge hardware.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Airborne</span>
+                  <span class="project-tag">Defense</span>
+                  <span class="project-tag">Real-time</span>
                 </div>
               </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Embedded Deep Learning Engineer</div>
-                  <p>Developed algorithms for object detection and segmentation of satellite multispectral images with
-                    hardware optimization. Implemented an in-orbit cloud removal module, created a computer vision
-                    accelerator for edge satellite integration, and designed a drone detection solution for anti-drone
-                    military applications. Integrated CAN communication between onboard and edge computing units for
-                    reliable satellite data transmission.</p>
-                  <p style="font-size:14px;color:#336699">#DeepLearning #SatelliteImaging #ComputerVision #EdgeAI
-                    #CANbus #DroneDetection</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>Nov 2021 – Feb 2024</p>
-                  <div class="h5">Nurenda Technologies</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Embedded Computer Vision Engineer</div>
-                  <p>Designed and implemented computer vision algorithms for GPS-free drone navigation using onboard
-                    sensors and deep learning. Developed real-time embedded 3D reconstruction for drones, built a
-                    Blender add-on for generating synthetic aerial datasets, and prepared/annotated large datasets for
-                    segmentation and object detection to enhance model robustness.</p>
-                  <p style="font-size:14px;color:#336699">#ComputerVision #DroneNavigation #3DReconstruction #Blender
-                    #SyntheticData #Segmentation</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>February 2020 - March 2021</p>
-                  <div class="h5">Micro-Optoelectronics & Nanostructures Laboratory</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Researcher internship Deep Learning Engineer</div>
-                  <p>I worked as an intern at Micro-Optoelectronics and Nanostructures Laboratory (LMON), Monastir, I
-                    gained substantial experience identifying and fixing bugs, as well as coding in python, C/C++. The
-                    goal of the project that I worked on was to implement and accelerate an embedded Neural network on
-                    an FPGA platform to detect pedestrians to avoid collisions.</p>
-                  <h3></h3>
-                  <p style="font-size:14px;color:#336699">#AI #deeplearning #python #C #C++ #xilinx #vivado_HLs
-                    #computer Vision</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>September 2018 - Actuel </p>
-                  <div class="h5">LEGOLAB</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Robotics Roach</div>
-                  <p>This is one of my favorite experiences. In 20218 I successfully founded LEGOLAB it's a private club
-                    for kids where we give the chance to dive deep into the word of robotics and see how programing and
-                    robots can solve world problems. I have animated many workshops about programming for kids and now
-                    I'm working for a part time job to manage this club with the help of my team of engineers.</p>
-                  <p style="font-size:14px;color:#336699">#LEGOLAB #LEGO Education #python #Scratch #EV3 Robot #VEX
-                    Robot #Wedo 2.0 Robot #microbit #Arduino</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-experience-header">
-                  <p>Jun 2017 – July 2017</p>
-                  <div class="h5">AVIONAV</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Intern</div>
-                  <p>This is my first professional experience, I was working with our client from France on a new
-                    project about studying the possibility of making a full electric aircraft, unfortunately it was a
-                    very short experience but I learned a lot from it and also I made a very good friend.</p>
-                  <p style="font-size:14px;color:#336699">#Avionav #Siemens #Airbus </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="container cc-education">
-          <div class="h4 text-center mb-4 title">Education</div>
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2025 - 2026</p>
-                  <div class="h5">Master 2 </div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Master Artificial Intelligence and its Applications in Vision and Robotics</div>
-                  <p class="category"> Faculty of Science and Technology Nancy</p>
-                  <p> </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2018 - 2021</p>
-                  <div class="h5">Master's Degree</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Research Master in Electronics: Microelectronics and Instrumentation</div>
-                  <p class="category">Higher Institute of Informatics and Mathematics of Monastir</p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header">
-                  <p>2015 - 2018</p>
-                  <div class="h5">Bachelor's Degree </div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Electronics, Electrical engineering and Automation (EEA)</div>
-                  <p class="category">FacultyofSciencesMonastir(FSM)</p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="section" id="contact">
-      <div class="cc-contact-information" style="background-image: url('images/map2.png')">
-        <div class="container">
-          <div class="cc-contact">
-            <div class="row">
-              <div class="col-md-9">
-                <div class="card mb-0" data-aos="zoom-in">
-                  <div class="h4 text-center title">Contact Me</div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <form action="https://formspree.io/f/xrgrwpoo" method="POST">
-                          <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                          <div class="row mb-3">
-                            <div class="col">
-                              <div class="input-group"><span class="input-group-addon"><i
-                                    class="fa fa-user-circle"></i></span>
-                                <input class="form-control" type="text" name="name" placeholder="Name"
-                                  required="required" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col">
-                              <div class="input-group"><span class="input-group-addon"><i
-                                    class="fa fa-file-text"></i></span>
-                                <input class="form-control" type="text" name="Subject" placeholder="Subject"
-                                  required="required" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col">
-                              <div class="input-group"><span class="input-group-addon"><i
-                                    class="fa fa-envelope"></i></span>
-                                <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
-                                  required="required" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col">
-                              <div class="form-group">
-                                <textarea class="form-control" name="message" placeholder="Your Message"
-                                  required="required"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col">
-                              <button class="btn btn-primary" type="submit">Send</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <p class="mb-0"><strong>Address </strong></p>
-                        <p class="pb-2">54500, Nancy, France</p>
-                        <p class="mb-0"><strong>Phone</strong></p>
-                        <p class="pb-2">+33 6 66 24 01 27</p>
-                        <p class="mb-0"><strong>Email</strong></p>
-                        <p>mechliamohamedamine@gmail.com</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+<article class="project-card" data-reveal>
+  <div class="project-media">
+    <video controls autoplay loop muted playsinline preload="metadata" poster="images/project2.PNG">
+      <source src="media/ICCV-2023-Demo - Nurenda-Virtual-Sky.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <div class="project-body">
+    <h3 class="project-title">Synthetic Aerial Imagery</h3>
+    <p class="project-copy">Generated annotated aerial datasets with Blender and RenderDoc for training detection networks.</p>
+    <div class="project-tags">
+      <span class="project-tag">Synthetic Data</span>
+      <span class="project-tag">Aerial</span>
+      <span class="project-tag">Dataset</span>
     </div>
   </div>
-  </div>
-  <footer class="footer">
-    <div class="container text-center"><a class="cc-facebook btn btn-link"
-        href="https://www.facebook.com/amin.mechlia/"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a
-        class="cc-github btn btn-link " href="https://github.com/mechlya"><i class="fa fa-github fa-2x "
-          aria-hidden="true"></i></a><a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/mechlia/"><i
-          class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link"
-        href="https://www.instagram.com/mechlya/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
-    <div class="h4 title text-center">Mechlia Mohamed Amine</div>
-    <div class="text-center text-muted">
-      <p>&copy; Mechlia CV. All rights reserved.<br></p>
+</article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata" poster="images/project3.PNG">
+                  <source src="media/Nurenda-Technologies-Real-time-Structure-from-Motion.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Real-Time Structure from Motion</h3>
+                <p class="project-copy">Realtime 3D reconstruction for drone and satellite imagery using optimized visual SLAM and SfM pipelines.</p>
+                <div class="project-tags">
+                  <span class="project-tag">SfM</span>
+                  <span class="project-tag">3D Reconstruction</span>
+                  <span class="project-tag">Real-Time</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata" poster="images/project4.PNG">
+                  <source src="media/Demo.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">ROS 2 Autonomous Driving Pipeline</h3>
+                <p class="project-copy">Built a full autonomous driving stack in ROS 2 and Gazebo Ignition, including a tri-camera PilotNet deep learning model, PID control, and real-time perception.</p>
+                <div class="project-tags">
+                  <span class="project-tag">ROS 2</span>
+                  <span class="project-tag">Autonomous Driving</span>
+                  <span class="project-tag">PilotNet</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata">
+                  <source src="media/robot.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Autonomous Robot Navigation — PACR</h3>
+                <p class="project-copy">Designed a fully autonomous ROS 2 navigation stack integrating A* path planning, Pure Pursuit control, and an MDP-based task planner solved by value iteration — enabling a robot to pick, transform, and deliver objects continuously with zero manual input.</p>
+                <div class="project-tags">
+                  <span class="project-tag">ROS 2</span>
+                  <span class="project-tag">A* Planning</span>
+                  <span class="project-tag">Pure Pursuit</span>
+                  <span class="project-tag">MDP</span>
+                  <span class="project-tag">Autonomous Navigation</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata" poster="images/project_atlas.PNG">
+                  <source src="media/atlas.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Projet ATLAS — Assistant hôtelier autonome (Robot Pepper)</h3>
+                <p class="project-copy">Développement d'une architecture robotique complète sous ROS 2, ROS 1 (ros1_bridge) et Docker. Implémentation d'une solution VSLAM 2D (RTAB-Map) par caméra RGB-D et d'un planificateur A* sur grille (inflation d'obstacles, contrôle proportionnel lookahead). Intégration du moteur HRI QiChat et interface tablette pour la gestion de scénarios d'accueil et de guidage.</p>
+                <div class="project-tags">
+                  <span class="project-tag">ROS 2</span>
+                  <span class="project-tag">RTAB-Map</span>
+                  <span class="project-tag">A* Planning</span>
+                  <span class="project-tag">Docker</span>
+                  <span class="project-tag">HRI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img src="images/project1.png" alt="Fruit Fly Detector embedded system">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Fruit Fly Detector</h3>
+                <p class="project-copy">Embedded computer vision for insect detection in intelligent traps with real-time response.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Embedded</span>
+                  <span class="project-tag">Computer Vision</span>
+                  <span class="project-tag">Agritech</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img src="images/project22.png" alt="Face landmark detection project">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Face Landmark Detection</h3>
+                <p class="project-copy">468-point face landmark system built with OpenCV, TensorFlow and MediaPipe, optimized for CPU.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Face AI</span>
+                  <span class="project-tag">MediaPipe</span>
+                  <span class="project-tag">OpenCV</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <video controls autoplay loop muted playsinline preload="metadata">
+                  <source src="media/results.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">ADAS FPGA Accelerator</h3>
+                <p class="project-copy">Accelerated pedestrian detection on FPGA for advanced driver assistance systems.</p>
+                <div class="project-tags">
+                  <span class="project-tag">FPGA</span>
+                  <span class="project-tag">ADAS</span>
+                  <span class="project-tag">Acceleration</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="portfolio-panel" data-tab-panel="certs">
+          <div class="cert-grid">
+            <article class="cert-card" data-reveal>
+              <img src="images/certification11.png" alt="DeepLearning.AI TensorFlow Developer certification">
+              <div class="cert-label">TensorFlow Developer</div>
+            </article>
+            <article class="cert-card" data-reveal>
+              <img src="images/certification33.png" alt="Convolutional Neural Networks certification">
+              <div class="cert-label">Convolutional Neural Networks</div>
+            </article>
+            <article class="cert-card" data-reveal>
+              <img src="images/certification22.png" alt="Scrum Fundamentals Certified SFC">
+              <div class="cert-label">Scrum Fundamentals Certified</div>
+            </article>
+            <article class="cert-card" data-reveal>
+              <img src="images/certification44.png" alt="Machine Learning course completion certificate">
+              <div class="cert-label">Machine Learning Course</div>
+            </article>
+          </div>
+        </div>
+
+        <div class="portfolio-panel" data-tab-panel="highlights">
+          <div class="highlights-grid">
+            <article class="highlight-card" data-reveal>
+              <img src="images/1.jpg" alt="Mohamed with Yann LeCun at ICCV">
+              <div class="highlight-caption">Meeting Yann LeCun at ICCV</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/2.jpg" alt="Award presentation at Green'it Tunisia">
+              <div class="highlight-caption">Green'it Tunisia first prize</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/iccv.webp" alt="AI conference demo presentation">
+              <div class="highlight-caption">ICCV demo presentation</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/nueobotics.jpeg" alt="Neobotics educational robotics startup">
+              <div class="highlight-caption">Neobotics robotics startup</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/3.jpg" alt="Entrepreneurship workshop certificate">
+              <div class="highlight-caption">Entrepreneurship workshop</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/esa.jpg" alt="Visit to ESA facility in Noordwijk">
+              <div class="highlight-caption">Visit to ESA Noordwijk</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/snt.jpg" alt="Visit to SnT research hub Luxembourg">
+              <div class="highlight-caption">SnT Reliability & Trust Hub</div>
+            </article>
+            <article class="highlight-card" data-reveal>
+              <img src="images/iccv2.jpeg" alt="ICCV Paris 2023 attendance">
+              <div class="highlight-caption">ICCV Paris 2023</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">— 04</span>
+          <h2 class="section-heading">Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">2024 – Present</p>
+            <h3 class="timeline-title">Freelancer</h3>
+            <p class="timeline-role">Computer Vision & AI Consultant</p>
+            <p class="timeline-body">Providing independent consulting and development services for embedded AI, computer vision, and robotics projects. Designing custom solutions for satellite imagery analysis, drone perception, and real-time detection systems on edge hardware.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">Mar 2026</p>
+            <h3 class="timeline-title">OVHcloud</h3>
+            <p class="timeline-role">Computer Vision Intern</p>
+            <p class="timeline-body">Developed an indoor localization and mapping system using Visual Odometry and Visual SLAM techniques for server room navigation in Croix, France. Designed real-time visual tracking algorithms for server localization in complex environments. Integrated ARKit-based augmented reality visualization and localization capabilities. Performed camera calibration, trajectory evaluation, system validation, and performance benchmarking. Conducted testing and debugging under real-world deployment conditions.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">2024 – Sept 2025</p>
+            <h3 class="timeline-title">TELNET Space Mars</h3>
+            <p class="timeline-role">Embedded Deep Learning Engineer</p>
+            <p class="timeline-body">Developed object detection and segmentation algorithms for multispectral satellite imagery with hardware optimization, cloud removal, and anti-drone detection systems.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">Nov 2021 – Feb 2024</p>
+            <h3 class="timeline-title">Nurenda Technologies</h3>
+            <p class="timeline-role">Embedded Computer Vision Engineer</p>
+            <p class="timeline-body">Built GPS-free drone navigation, embedded 3D reconstruction, synthetic aerial dataset pipelines, and robust segmentation/detection workflows.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">Feb 2020 – Mar 2021</p>
+            <h3 class="timeline-title">Micro-Optoelectronics & Nanostructures Lab</h3>
+            <p class="timeline-role">Research Intern</p>
+            <p class="timeline-body">Implemented and accelerated a neural network on FPGA for pedestrian collision detection using Python, C/C++ and hardware design tools.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">Sep 2018 – Present</p>
+            <h3 class="timeline-title">LEGOLAB</h3>
+            <p class="timeline-role">Robotics Coach</p>
+            <p class="timeline-body">Founded a robotics education club for kids and led workshops on programming and hands-on robotics with LEGO, micro:bit and Arduino.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">Jun 2017 – Jul 2017</p>
+            <h3 class="timeline-title">AVIONAV</h3>
+            <p class="timeline-role">Intern</p>
+            <p class="timeline-body">Participated in early research on electric aircraft design while collaborating with French industry partners.</p>
+          </article>
+        </div>
+        <div class="timeline timeline-education">
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">2025 – 2026</p>
+            <h3 class="timeline-title">Master 2 AI & Vision/Robotics</h3>
+            <p class="timeline-role">Faculty of Science and Technology Nancy</p>
+            <p class="timeline-body">Advanced specialization in artificial intelligence, computer vision, and robotics systems.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">2018 – 2021</p>
+            <h3 class="timeline-title">Research Master in Electronics</h3>
+            <p class="timeline-role">ISIMM Monastir</p>
+            <p class="timeline-body">Focused on microelectronics, instrumentation, and embedded systems for research applications.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <p class="timeline-date">2015 – 2018</p>
+            <h3 class="timeline-title">Bachelor's Degree EEA</h3>
+            <p class="timeline-role">Faculty of Sciences Monastir</p>
+            <p class="timeline-body">EEA — Électronique, Électrotechnique, Automatique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">— 05</span>
+          <h2 class="section-heading">Contact</h2>
+        </div>
+        <div class="contact-grid grid-two">
+          <div class="contact-card" data-reveal>
+            <form action="https://formspree.io/f/xrgrwpoo" method="POST">
+              <div class="contact-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+              <div class="contact-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="Subject" type="text" required>
+              </div>
+              <div class="contact-field">
+                <label for="email">Email</label>
+                <input id="email" name="_replyto" type="email" required>
+              </div>
+              <div class="contact-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+          <aside class="contact-card" data-reveal>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <strong>Address</strong>
+                <span>📍 54500, Nancy, France</span>
+              </div>
+              <div class="contact-info-item">
+                <strong>Phone</strong>
+                <span>📞 +33 6 66 24 01 27</span>
+              </div>
+              <div class="contact-info-item">
+                <strong>Email</strong>
+                <span>✉ mechliamohamedamine@gmail.com</span>
+              </div>
+              <div class="contact-socials">
+                <a class="social-link" href="https://github.com/mechlya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.556-1.11-4.556-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.545 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.843-2.339 4.687-4.567 4.935.359.31.679.92.679 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481A10.013 10.013 0 0 0 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/mechlia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2.5a4 4 0 0 1 4-2.5z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a class="social-link" href="https://www.facebook.com/amin.mechlia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-socials">
+        <a class="social-link" href="https://github.com/mechlya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.556-1.11-4.556-4.944 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.545 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.843-2.339 4.687-4.567 4.935.359.31.679.92.679 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481A10.013 10.013 0 0 0 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/mechlia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2.5a4 4 0 0 1 4-2.5z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+      <div class="footer-copy">© 2026 Mohamed Amine Mechlia. All rights reserved.</div>
     </div>
   </footer>
-  <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
-  <script src="js/core/popper.min.js?ver=1.1.0"></script>
-  <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
-  <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-  <script src="js/aos.js?ver=1.1.0"></script>
-  <script src="scripts/main.js?ver=1.1.0"></script>
+  <script defer src="js/main.js"></script>
 </body>
-
 </html>
